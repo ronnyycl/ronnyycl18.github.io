@@ -13,7 +13,17 @@
 html {
     font-size: 62.5%; /*Reinicio de el tamaño de fuente*/
     box-sizing: border-box;     /* Hack BOX Model */
+    scroll-snap-type: y mandatory;
 }
+
+/* Scroll-Snap */
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 *, *:before, *:after {      /* Hack BOX Model */
     box-sizing: inherit;    
   }
@@ -161,6 +171,7 @@ h1, h2, h3 {
     display: flex;
     align-items: flex-end;
 }
+
 
 /**Servicios**/
 @media (min-width: 768px) {     /* Responsive Web Dising (Navegacion) */
