@@ -4,161 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrontEnd Store</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <title>BlogDeCafé</title>
 </head>
 <body>
+
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="logotipo fronted store">
-        </a>
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a  class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a  class="navegacion__enlace" href="cursos.html">Curso</a>
+                    <a  class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
     </header>
 
-    <nav class="navegacion">
-        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
-        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-    </nav>
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
 
-    <main class="contendor">
-        <h1>Nuestros Productos</h1>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                </div>
 
-        <div class="grid">
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">VueJS</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/2.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">AngularJS</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/3.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">ReactJS</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/4.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Redux</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/5.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Node.js</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/6.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">SASS</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/7.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">HTML5</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/8.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Github</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/9.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">BulmaCSS</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/10.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">TypeScript</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/11.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Drupal</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/12.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">JavaScript</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto--><div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/13.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">GraphQL</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/14.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">WordPress</p>
-                        <p class="producto__precio">25$</p>
-                    </div>
-                </a>
-            </div> <!--.producto-->
-            <div class="grafico grafico--camisas"></div>
-            <div class="grafico grafico--node"></div>
-        </div>
-    </main>
+                <div class="entrada__contenido">
+                    <h4 class="no-marging">Tipos de Granos de Café</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et augue vitae enim convallis venenatis. Etiam ornare auctor risus, 
+                        sit amet viverra sapien vulputate ut. Praesent facilisis velit sem, in ornare ante malesuada quis. Duis vel vestibulum velit. Suspendisse 
+                        et interdum est. In hac habitasse platea dictumst. Cras mauris lectus, pharetra in lacus cursus, egestas imperdiet sapien. Morbi suscipit,
+                        erat fringilla tincidunt mollis, eros sapien porta ipsum, nec pulvinar purus ante ut dolor. In quis euismod sem. Nam ullamcorper vel neque at 
+                        fringilla. Nulla tincidunt orci molestie augue ullamcorper rutrum. Vestibulum sed odio quam. Sed sit amet imperdiet quam. Phasellus metus turpis, 
+                        consectetur eu molestie vulputate, vulputate sit amet purus.
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
 
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-marging">3 Deliciosas recetas de Café</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et augue vitae enim convallis venenatis. Etiam ornare auctor risus, 
+                        sit amet viverra sapien vulputate ut. Praesent facilisis velit sem, in ornare ante malesuada quis. Duis vel vestibulum velit. Suspendisse 
+                        et interdum est. In hac habitasse platea dictumst. Cras mauris lectus, pharetra in lacus cursus, egestas imperdiet sapien. Morbi suscipit,
+                        erat fringilla tincidunt mollis, eros sapien porta ipsum, nec pulvinar purus ante ut dolor. In quis euismod sem. Nam ullamcorper vel neque at 
+                        fringilla. Nulla tincidunt orci molestie augue ullamcorper rutrum. Vestibulum sed odio quam. Sed sit amet imperdiet quam. Phasellus metus turpis, 
+                        consectetur eu molestie vulputate, vulputate sit amet purus.
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-marging">Beneficios del Café</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et augue vitae enim convallis venenatis. Etiam ornare auctor risus, 
+                        sit amet viverra sapien vulputate ut. Praesent facilisis velit sem, in ornare ante malesuada quis. Duis vel vestibulum velit. Suspendisse 
+                        et interdum est. In hac habitasse platea dictumst. Cras mauris lectus, pharetra in lacus cursus, egestas imperdiet sapien. Morbi suscipit,
+                        erat fringilla tincidunt mollis, eros sapien porta ipsum, nec pulvinar purus ante ut dolor. In quis euismod sem. Nam ullamcorper vel neque at 
+                        fringilla. Nulla tincidunt orci molestie augue ullamcorper rutrum. Vestibulum sed odio quam. Sed sit amet imperdiet quam. Phasellus metus turpis, 
+                        consectetur eu molestie vulputate, vulputate sit amet purus.
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas de Extraccion de Café</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Mas Información</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Cuatro Recetas de Café para Principiantes</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Mas Información</a>
+                </li>
+
+            </ul>
+        </aside>
+    </div>
+    
     <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos Reservados por Ronny Carrasquel 2022</p>
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a  class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a  class="navegacion__enlace" href="cursos.html">Curso</a>
+                    <a  class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

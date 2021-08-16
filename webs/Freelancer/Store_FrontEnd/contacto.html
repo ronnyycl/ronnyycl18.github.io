@@ -35,31 +35,42 @@
     </header>
 
     <main class="contenedor">
-        <h3 class="centrar-texto">Sobre Nosotros</h3>
+        <h3 class="centrar-texto">Contacto</h3>
 
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__imagen">
-                <img src="img/nosotros.jpg" alt="imagen nosotros">
+        <div class="contacto-bg"></div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input
+                    class="campo__field" 
+                    type="text" 
+                    placeholder="Tu Nombre" 
+                    id="nombre"
+                > 
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input
+                    class="campo__field" 
+                    type="email" 
+                    placeholder="Tu E-mail" 
+                    id="email"
+                > 
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea
+                    class="campo__field campo__field--textarea" 
+                    id="mensaje"
+                ></textarea>
             </div>
 
-            <div class="sobre-nosotros__texto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor arcu, vestibulum ut mauris sed, bibendum 
-                    vestibulum ante. Praesent fringilla tempor rutrum. Pellentesque sit amet erat fringilla, laoreet nisl sed, 
-                    pulvinar sapien. Proin hendrerit justo id lorem maximus, eu mattis urna vestibulum. Sed urna turpis, auctor in 
-                    ante eu, commodo malesuada ante. Curabitur posuere urna a libero malesuada, vitae molestie tortor commodo. Etiam
-                    venenatis vel orci et dictum. Cras et tempor eros, a feugiat neque. Maecenas pharetra congue eros, quis iaculis 
-                    orci vehicula elementum. Aenean facilisis felis sit amet sapien aliquet, in suscipit diam tristique. Cras aliquet 
-                    nunc vitae venenatis bibendum.
-
-                    Maecenas blandit viverra magna vitae luctus. Sed sit amet tristique nunc, vel feugiat nibh. Integer a ullamcorper 
-                    leo. Etiam finibus fringilla tortor vitae finibus. Nulla pretium dapibus turpis eu varius. In auctor mattis libero 
-                    id mollis. Proin neque ipsum, tempor in sodales et, luctus at purus. Vivamus euismod nunc et viverra euismod. Morbi 
-                    augue quam, auctor cursus ultrices vel, commodo ac nisi. Nam posuere feugiat quam, vitae volutpat felis sollicitudin 
-                    sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tempor erat sed 
-                    viverra aliquet.</p>
-                    
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
             </div>
-        </div>
+        </form>
+
     </main>
     
     <footer class="footer">
