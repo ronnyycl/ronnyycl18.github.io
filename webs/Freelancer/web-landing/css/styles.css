@@ -1,0 +1,92 @@
+:root {
+    --verdeOscuro: #007965;
+    --verdeClaro: #00AF91;
+    --naranja: #F58634;
+    --blancoOscuro: #eaeaea;
+    --blanco: #fff;
+    --negro: #082032;
+    /* Fonts */
+    --fuente: 'Oswald', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Global */
+body {
+    width: 100%;
+    font-size: 2rem;
+    font-family: var(--fuente);
+    line-height: 2;
+    text-align: center;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%
+}
+
+/* Header */
+.head {
+    background-image: url(../img/bg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 100%;
+    color: var(--blanco);
+    position: relative;
+}
+.head__content {
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton {
+    background-color: var(--verdeOscuro);
+    color: var(--blanco);
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.boton:hover {
+    background-color: var(--blancoOscuro);
+    color: var(--negro);
+}
+#a {
+    background-color: var(--blancoOscuro);
+    padding-bottom: 1rem;
+}
+#a h2 {
+    padding-top: 3rem;
+}
+.a__content {
+    display: flex;
+    justify-content: center;
+}
+.a__content p {
+    width: 60rem;
+    padding: 1rem 2rem 3rem 1rem;
+}
