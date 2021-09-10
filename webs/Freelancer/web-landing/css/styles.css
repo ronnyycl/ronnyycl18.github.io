@@ -75,6 +75,8 @@ img {
     background-color: var(--blancoOscuro);
     color: var(--negro);
 }
+
+/*Section a*/
 #a {
     background-color: var(--blancoOscuro);
     padding-bottom: 1rem;
@@ -89,4 +91,22 @@ img {
 .a__content p {
     width: 60rem;
     padding: 1rem 2rem 3rem 1rem;
+}
+
+/*Section b*/
+#b {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    background-color: var(--negro);
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    height: 50rem;
+    width: auto;
+    padding: 3rem 1.5rem;
+}
+#b .box {
+    background-color: var(--blancoOscuro);
+    min-height: 35rem;
+    margin: 5rem 3.5rem;
 }
